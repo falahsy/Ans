@@ -1,0 +1,351 @@
+[
+    {
+        "name": "African Bush Elephant",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Loxodonta",
+            "scientific_name": "Loxodonta africana africana"
+        },
+        "locations": [
+            "Africa"
+        ],
+        "characteristics": {
+            "prey": "Grass, Fruit, Roots",
+            "name_of_young": "Calf",
+            "group_behavior": "Herd",
+            "estimated_population_size": "300,000",
+            "biggest_threat": "Poaching and habitat loss",
+            "most_distinctive_feature": "Large, rounded ears",
+            "other_name(s)": "African Elephant",
+            "gestation_period": "20 - 24 months",
+            "habitat": "Forest, savannah and flood plains",
+            "predators": "Human, Lion, Hyena",
+            "diet": "Herbivore",
+            "average_litter_size": "1",
+            "lifestyle": "Diurnal",
+            "common_name": "African Bush Elephant",
+            "number_of_species": "1",
+            "location": "central and southern Africa",
+            "slogan": "Can drink up to 50 gallons a day",
+            "group": "Mammal",
+            "color": "BrownGrey",
+            "skin_type": "Leather",
+            "top_speed": "25 mph",
+            "lifespan": "60 - 70 years",
+            "weight": "3,600kg - 5,400kg (7,900lbs - 12,000lbs)",
+            "height": "3m - 3.5m (10ft - 12ft)",
+            "age_of_sexual_maturity": "11 - 20 years",
+            "age_of_weaning": "6 - 18 months"
+        }
+    },
+    {
+        "name": "African Forest Elephant",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Loxodonta",
+            "scientific_name": "Loxodonta cyclotis"
+        },
+        "locations": [
+            "Africa"
+        ],
+        "characteristics": {
+            "prey": "Grass, Fruit, Roots",
+            "name_of_young": "Calf",
+            "group_behavior": "Herd",
+            "estimated_population_size": "200,000",
+            "biggest_threat": "Poaching and habitat loss",
+            "most_distinctive_feature": "Rounded ears and thin, straight tusks",
+            "other_name(s)": "African Elephant",
+            "gestation_period": "22 - 24 months",
+            "habitat": "Forest, savannah and flood plains",
+            "predators": "Human, Lion, Hyena",
+            "diet": "Herbivore",
+            "average_litter_size": "1",
+            "lifestyle": "Diurnal",
+            "common_name": "African Forest Elephant",
+            "number_of_species": "1",
+            "location": "central and southern Africa",
+            "slogan": "Have large rounded ears to help keep them cool!",
+            "group": "Mammal",
+            "color": "BrownGrey",
+            "skin_type": "Leather",
+            "top_speed": "24 mph",
+            "lifespan": "60 - 70 years",
+            "weight": "900kg - 3,000kg (1,984lbs - 6,613lbs)",
+            "height": "2m - 3m (6.6ft - 9.8ft)",
+            "age_of_sexual_maturity": "11 - 20 years",
+            "age_of_weaning": "5 years"
+        }
+    },
+    {
+        "name": "Asian Elephant",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Elephas",
+            "scientific_name": "Elephas maximus"
+        },
+        "locations": [
+            "Asia"
+        ],
+        "characteristics": {
+            "main_prey": "Grass, Fruit, Roots",
+            "distinctive_feature": "Long trunk and large feet",
+            "habitat": "Rainforest and tropical woodland",
+            "predators": "Human, Tiger",
+            "diet": "Herbivore",
+            "average_litter_size": "1",
+            "lifestyle": "Herd",
+            "favorite_food": "Grass",
+            "type": "Mammal",
+            "slogan": "Domesticated for hundreds of years!",
+            "color": "BrownGreyBlack",
+            "skin_type": "Leather",
+            "top_speed": "27 mph",
+            "lifespan": "55 - 70 years",
+            "weight": "3,000kg - 5,000kg (6,500lbs - 11,000lbs)",
+            "height": "2m - 3m (7ft - 10ft)"
+        }
+    },
+    {
+        "name": "Borneo Elephant",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Elephas",
+            "scientific_name": "Elephas maximus borneensis"
+        },
+        "locations": [
+            "Asia",
+            "Ocean"
+        ],
+        "characteristics": {
+            "main_prey": "Grass, Fruit, Roots",
+            "distinctive_feature": "Long trunk and large feet",
+            "habitat": "Rainforest and tropical woodland",
+            "predators": "Human, Tiger",
+            "diet": "Herbivore",
+            "average_litter_size": "1",
+            "lifestyle": "Herd",
+            "favorite_food": "Grass",
+            "type": "Mammal",
+            "slogan": "The smallest species of elephant!",
+            "color": "BrownGreyBlack",
+            "skin_type": "Leather",
+            "top_speed": "27 mph",
+            "lifespan": "55 - 70 years",
+            "weight": "3,000kg - 5,000kg (6,500lbs - 11,000lbs)",
+            "height": "2m - 3m (7ft - 10ft)"
+        }
+    },
+    {
+        "name": "Elephant",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae"
+        },
+        "locations": [
+            "Africa",
+            "Asia"
+        ],
+        "characteristics": {
+            "main_prey": "Grass, Fruit, Roots",
+            "distinctive_feature": "Large body size and long trunk",
+            "habitat": "Rainforest and flood plains",
+            "diet": "Herbivore",
+            "average_litter_size": "1",
+            "lifestyle": "Herd",
+            "favorite_food": "Grass",
+            "type": "Mammal",
+            "slogan": "Spends around 22 hours a day eating!",
+            "color": "Grey",
+            "skin_type": "Leather",
+            "top_speed": "25 mph",
+            "lifespan": "55 - 70 years",
+            "weight": "3,000kg - 5,400kg (6,500lbs - 12,000lbs)",
+            "height": "2m - 3.6m (7ft - 12ft)"
+        }
+    },
+    {
+        "name": "Elephant Seal",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Carnivora",
+            "family": "Phocidae",
+            "genus": "Mirounga",
+            "scientific_name": "Mirounga"
+        },
+        "locations": [
+            "Ocean"
+        ],
+        "characteristics": {
+            "main_prey": "Fish, Squid, Octopus",
+            "distinctive_feature": "Long trunk-like nose and large body",
+            "habitat": "Warm coastal waters close to land",
+            "predators": "Human, Sharks, Killer Whales",
+            "diet": "Carnivore",
+            "average_litter_size": "1",
+            "lifestyle": "Herd",
+            "favorite_food": "Fish",
+            "type": "Mammal",
+            "slogan": "The largest species of seal in the world!",
+            "color": "BrownGreyBlackTan",
+            "skin_type": "Fur",
+            "top_speed": "12 mph",
+            "lifespan": "18 - 22 years",
+            "weight": "900kg - 3,000kg (2,000lbs - 6,000lbs)",
+            "length": "3m - 5m (10ft - 16ft)"
+        }
+    },
+    {
+        "name": "Elephant Shrew",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Macroscelidea",
+            "family": "Macroscelididae",
+            "genus": "Elephantulus",
+            "scientific_name": "Elephantulus"
+        },
+        "locations": [
+            "Africa"
+        ],
+        "characteristics": {
+            "main_prey": "Insects, Worms, Spiders",
+            "distinctive_feature": "Long nose and long back legs",
+            "habitat": "Forest, woodland and grassland",
+            "predators": "Snakes, Lizards, Birds of Prey",
+            "diet": "Omnivore",
+            "average_litter_size": "2",
+            "lifestyle": "Solitary",
+            "favorite_food": "Insects",
+            "type": "Mammal",
+            "slogan": "Found exclusively on the African continent!",
+            "color": "BrownGreyBlackWhiteTan",
+            "skin_type": "Fur",
+            "top_speed": "8 mph",
+            "lifespan": "2 - 5 years",
+            "weight": "50g - 500g (2oz - 18oz)",
+            "length": "10cm - 30cm (4in - 12in)"
+        }
+    },
+    {
+        "name": "Indian Elephant",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Elephas",
+            "scientific_name": "Elephas maximus indicus"
+        },
+        "locations": [
+            "Asia"
+        ],
+        "characteristics": {
+            "main_prey": "Grass, Fruit, Roots",
+            "distinctive_feature": "Long trunk and large feet",
+            "habitat": "Rainforest and tropical woodland",
+            "predators": "Human, Tiger",
+            "diet": "Herbivore",
+            "average_litter_size": "1",
+            "lifestyle": "Herd",
+            "favorite_food": "Grass",
+            "type": "Mammal",
+            "slogan": "Found throughout south-east Asia!",
+            "color": "BrownGreyBlack",
+            "skin_type": "Leather",
+            "top_speed": "27 mph",
+            "lifespan": "55 - 70 years",
+            "weight": "3,000kg - 5,000kg (6,500lbs - 11,000lbs)",
+            "height": "2m - 3m (7ft - 10ft)"
+        }
+    },
+    {
+        "name": "Sri Lankan Elephant",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Elephas",
+            "scientific_name": "Elephas Maximus Maximus"
+        },
+        "locations": [
+            "Asia"
+        ],
+        "characteristics": {
+            "main_prey": "Grass, Fruit, Roots",
+            "distinctive_feature": "Long trunk and large feet",
+            "habitat": "Rainforest and tropical woodland",
+            "predators": "Human, Tiger",
+            "diet": "Herbivore",
+            "average_litter_size": "1",
+            "lifestyle": "Herd",
+            "favorite_food": "Grass",
+            "type": "Mammal",
+            "slogan": "Now restricted to a few parks!",
+            "color": "BrownGreyBlack",
+            "skin_type": "Leather",
+            "top_speed": "27 mph",
+            "lifespan": "55 - 70 years",
+            "weight": "3,000kg - 5,000kg (6,500lbs - 11,000lbs)",
+            "height": "2m - 3m (7ft - 10ft)"
+        }
+    },
+    {
+        "name": "Sumatran Elephant",
+        "taxonomy": {
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "class": "Mammalia",
+            "order": "Proboscidea",
+            "family": "Elephantidae",
+            "genus": "Elephas",
+            "scientific_name": "Elephas Maximus Sumatranus"
+        },
+        "locations": [
+            "Asia"
+        ],
+        "characteristics": {
+            "main_prey": "Grass, Fruit, Roots",
+            "distinctive_feature": "Long trunk and large feet",
+            "habitat": "Rainforest and tropical woodland",
+            "predators": "Human, Tiger",
+            "diet": "Herbivore",
+            "average_litter_size": "1",
+            "lifestyle": "Herd",
+            "favorite_food": "Grass",
+            "type": "Mammal",
+            "slogan": "Less than 2,000 left in the wild!",
+            "color": "BrownGreyBlack",
+            "skin_type": "Leather",
+            "top_speed": "27 mph",
+            "lifespan": "55 - 70 years",
+            "weight": "3,000kg - 5,000kg (6,500lbs - 11,000lbs)",
+            "height": "2m - 3m (7ft - 10ft)"
+        }
+    }
+]
