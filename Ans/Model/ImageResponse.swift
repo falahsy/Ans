@@ -21,7 +21,11 @@ struct ImageResponse: Codable {
 
 struct Photo: Codable {
     let src: Src
-    let liked: Bool
+    var liked: Bool
+    
+    mutating func setLiked(isLike: Bool) {
+        liked = isLike
+    }
 }
 
 struct Src: Codable {

@@ -107,7 +107,7 @@ class AnimalImagesViewController: UIViewController {
     private func reloadAnimeImageRow(at index: IndexPath) {
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
-            self.tableView.reloadRows(at: [index], with: .automatic)
+            self.tableView.reloadRows(at: [index], with: .none)
         }
     }
     
@@ -154,8 +154,7 @@ extension AnimalImagesViewController: UITableViewDataSource {
               let photo = photos[safe: indexPath.row] else {
             return UITableViewCell()
         }
-        let isLike = indexPath.row % 2 == 0
-        cell.setupContent(image: photo, isLike: isLike, at: indexPath)
+        cell.setupContent(name: animalName, image: photo, isLike: photo.liked, at: indexPath)
         cell.delegate = self
         return cell
     }
@@ -174,6 +173,9 @@ extension AnimalImagesViewController: UITableViewDelegate {
 
 extension AnimalImagesViewController: AnimalImageTableViewCellDelegate {
     func didLikeTapped(isLike: Bool, at index: IndexPath) {
+        guard var tappedPhoto = photos[safe: index.row] else { return }
+        tappedPhoto.liked = isLike
+        photos[index.row] = tappedPhoto
         reloadAnimeImageRow(at: index)
     }
 }

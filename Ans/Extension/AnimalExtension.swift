@@ -33,7 +33,7 @@ extension UIImage {
 }
 
 extension UIColor {
-    static var backgroundFavorite: UIColor {
-        return UIColor(red: 168/255, green: 188/255, blue: 196/255, alpha: 1)
+    static var backgroundWithAlpha: UIColor {
+        return UIColor(red: 1, green: 1, blue: 1, alpha: 0.6)
     }
 }

@@ -194,6 +194,7 @@
 		160682912ADF93FD007E0EC5 /* AnsTests */ = {
 			isa = PBXGroup;
 			children = (
+				1606830A2AE019FB007E0EC5 /* AnimalFavorites */,
 				160682E52AE00C09007E0EC5 /* AnimalList */,
 				160682E62AE00C1C007E0EC5 /* AnimalImage */,
 				160682F82AE01030007E0EC5 /* Worker */,
@@ -467,6 +468,13 @@
 				160683082AE0172F007E0EC5 /* AnimalFavoritesRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		1606830A2AE019FB007E0EC5 /* AnimalFavorites */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AnimalFavorites;
 			sourceTree = "<group>";
 		};
 		8AC975D6F7EF77BBA7F6D802 /* Pods */ = {
