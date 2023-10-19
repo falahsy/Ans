@@ -41,7 +41,8 @@ extension AnimalApiRouter: URLRequestConvertible {
     
     var headers: HTTPHeaders {
         var headers = HTTPHeaders()
-        headers["X-Api-Key"] = "pfFQJxLiPMYqvY5rZXbYdw==VBjYVanTRFZdEhx9"
+        let apiKey = Bundle.main.infoDictionary?["API_KEY_NINJA"] as? String ?? ""
+        headers["X-Api-Key"] = apiKey
         return headers
     }
     

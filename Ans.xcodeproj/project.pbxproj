@@ -29,7 +29,6 @@
 		160682D52ADFB273007E0EC5 /* AnimalListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160682D42ADFB273007E0EC5 /* AnimalListRouter.swift */; };
 		160682D72ADFB284007E0EC5 /* AnimalImagesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160682D62ADFB284007E0EC5 /* AnimalImagesInteractor.swift */; };
 		160682D92ADFB28D007E0EC5 /* AnimalImagesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160682D82ADFB28D007E0EC5 /* AnimalImagesPresenter.swift */; };
-		160682DB2ADFB295007E0EC5 /* AnimalImagesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160682DA2ADFB295007E0EC5 /* AnimalImagesRouter.swift */; };
 		160682DE2ADFBF8B007E0EC5 /* AnimalListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160682DD2ADFBF8B007E0EC5 /* AnimalListTableViewCell.swift */; };
 		160682E12ADFC08B007E0EC5 /* AnimalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160682E02ADFC08B007E0EC5 /* AnimalExtension.swift */; };
 		160682E42ADFC51A007E0EC5 /* AnimalImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160682E32ADFC51A007E0EC5 /* AnimalImageTableViewCell.swift */; };
@@ -46,7 +45,6 @@
 		160683032AE016FF007E0EC5 /* AnimalFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160683022AE016FF007E0EC5 /* AnimalFavoritesViewController.swift */; };
 		160683052AE0171C007E0EC5 /* AnimalFavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160683042AE0171C007E0EC5 /* AnimalFavoritesPresenter.swift */; };
 		160683072AE01726007E0EC5 /* AnimalFavoritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160683062AE01726007E0EC5 /* AnimalFavoritesInteractor.swift */; };
-		160683092AE0172F007E0EC5 /* AnimalFavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160683082AE0172F007E0EC5 /* AnimalFavoritesRouter.swift */; };
 		1606830E2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1606830C2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodeld */; };
 		160683112AE024CF007E0EC5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160683102AE024CF007E0EC5 /* CoreDataStack.swift */; };
 		1606831E2AE0C89D007E0EC5 /* AnimalEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1606831C2AE0C89D007E0EC5 /* AnimalEntity+CoreDataClass.swift */; };
@@ -101,7 +99,6 @@
 		160682D42ADFB273007E0EC5 /* AnimalListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListRouter.swift; sourceTree = "<group>"; };
 		160682D62ADFB284007E0EC5 /* AnimalImagesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalImagesInteractor.swift; sourceTree = "<group>"; };
 		160682D82ADFB28D007E0EC5 /* AnimalImagesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalImagesPresenter.swift; sourceTree = "<group>"; };
-		160682DA2ADFB295007E0EC5 /* AnimalImagesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalImagesRouter.swift; sourceTree = "<group>"; };
 		160682DD2ADFBF8B007E0EC5 /* AnimalListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListTableViewCell.swift; sourceTree = "<group>"; };
 		160682E02ADFC08B007E0EC5 /* AnimalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalExtension.swift; sourceTree = "<group>"; };
 		160682E32ADFC51A007E0EC5 /* AnimalImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -118,7 +115,6 @@
 		160683022AE016FF007E0EC5 /* AnimalFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFavoritesViewController.swift; sourceTree = "<group>"; };
 		160683042AE0171C007E0EC5 /* AnimalFavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFavoritesPresenter.swift; sourceTree = "<group>"; };
 		160683062AE01726007E0EC5 /* AnimalFavoritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFavoritesInteractor.swift; sourceTree = "<group>"; };
-		160683082AE0172F007E0EC5 /* AnimalFavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFavoritesRouter.swift; sourceTree = "<group>"; };
 		1606830D2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoritesAnimal.xcdatamodel; sourceTree = "<group>"; };
 		160683102AE024CF007E0EC5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		1606831C2AE0C89D007E0EC5 /* AnimalEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -290,18 +286,9 @@
 				160682B62ADF9556007E0EC5 /* ViewController */,
 				160682B52ADF9551007E0EC5 /* Interactor */,
 				160682B42ADF954B007E0EC5 /* Presenter */,
-				160682B32ADF9543007E0EC5 /* Router */,
 				160682E22ADFC500007E0EC5 /* View */,
 			);
 			path = AnimalImage;
-			sourceTree = "<group>";
-		};
-		160682B32ADF9543007E0EC5 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				160682DA2ADFB295007E0EC5 /* AnimalImagesRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		160682B42ADF954B007E0EC5 /* Presenter */ = {
@@ -442,7 +429,6 @@
 				160682FE2AE016A5007E0EC5 /* ViewController */,
 				160682FF2AE016B8007E0EC5 /* Presenter */,
 				160683002AE016C5007E0EC5 /* Interactor */,
-				160683012AE016DB007E0EC5 /* Router */,
 			);
 			path = AnimalFovorites;
 			sourceTree = "<group>";
@@ -469,14 +455,6 @@
 				160683062AE01726007E0EC5 /* AnimalFavoritesInteractor.swift */,
 			);
 			path = Interactor;
-			sourceTree = "<group>";
-		};
-		160683012AE016DB007E0EC5 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				160683082AE0172F007E0EC5 /* AnimalFavoritesRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		1606830A2AE019FB007E0EC5 /* AnimalFavorites */ = {
@@ -760,7 +738,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				160683092AE0172F007E0EC5 /* AnimalFavoritesRouter.swift in Sources */,
 				160682D92ADFB28D007E0EC5 /* AnimalImagesPresenter.swift in Sources */,
 				160682D72ADFB284007E0EC5 /* AnimalImagesInteractor.swift in Sources */,
 				160682D52ADFB273007E0EC5 /* AnimalListRouter.swift in Sources */,
@@ -777,7 +754,6 @@
 				160682DE2ADFBF8B007E0EC5 /* AnimalListTableViewCell.swift in Sources */,
 				1606830E2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodeld in Sources */,
 				160682D12ADFB260007E0EC5 /* AnimalListInteractor.swift in Sources */,
-				160682DB2ADFB295007E0EC5 /* AnimalImagesRouter.swift in Sources */,
 				1606827C2ADF93FA007E0EC5 /* AppDelegate.swift in Sources */,
 				160682D32ADFB269007E0EC5 /* AnimalListPresenter.swift in Sources */,
 				160683032AE016FF007E0EC5 /* AnimalFavoritesViewController.swift in Sources */,
@@ -898,6 +874,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D API_PEXEL_KEY=$(API_PEXEL_KEY) -D API_NINJAS_KEY=$(API_NINJAS_KEY)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -951,6 +928,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_SWIFT_FLAGS = "-D API_PEXEL_KEY=$(API_PEXEL_KEY) -D API_NINJAS_KEY=$(API_NINJAS_KEY)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

@@ -41,7 +41,8 @@ extension ImageApiRouter: URLRequestConvertible {
     
     var headers: HTTPHeaders {
         var headers = HTTPHeaders()
-        headers["Authorization"] = "F0RsC7L6viQO7bzFmZTKs7hwGWhXlwm5TjAozyXUwkTmB8INisxbwjVg"
+        let apiKey = Bundle.main.infoDictionary?["API_PEXEL_KEY"] as? String ?? ""
+        headers["Authorization"] = apiKey
         return headers
     }
     
