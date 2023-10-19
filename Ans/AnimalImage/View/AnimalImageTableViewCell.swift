@@ -127,14 +127,14 @@ class AnimalImageTableViewCell: UITableViewCell {
         nameLabel.text = nil
     }
     
-    func setupContent(name: String, image: Photo, isLike: Bool, at index: IndexPath) {
+    func setupContent(name: String, urlImage: String, isLike: Bool, at index: IndexPath, isFavoritePage: Bool) {
         let imageLike = isLike ? "star.fill" : "star"
         favoriteImageView.image = UIImage(systemName: imageLike)
         self.isLike = isLike
         self.indexPath = index
         
         let options = KingfisherOptionsInfo.defaultOptions
-        let imageUrl = URL(string: image.src.landscape)
+        let imageUrl = URL(string: urlImage)
         animalImageView.kf.setImage(with: imageUrl, options: options) { [weak self] result in
             guard let self else { return }
             switch result{
@@ -145,6 +145,7 @@ class AnimalImageTableViewCell: UITableViewCell {
             }
         }
         nameLabel.text = name
+        nameBackgroundView.isHidden = !isFavoritePage
     }
     
     @objc func likeTapped() {

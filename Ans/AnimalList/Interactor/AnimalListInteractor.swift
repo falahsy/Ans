@@ -33,7 +33,10 @@ class AnimalListInteractor: IAnimalListInteractor {
                 guard let self else { return }
                 switch result {
                 case .success(let response):
-                    self.animals.append(contentsOf: response)
+                    let objResult = response.map { obj in
+                        return Animal(name: obj.name, taxonomy: Taxonomy(family: animal))
+                    }
+                    self.animals.append(contentsOf: objResult)
                     disptachGroup.leave()
                 case .failure(let error):
                     self.presenter.presentError(log: error.localizedDescription)

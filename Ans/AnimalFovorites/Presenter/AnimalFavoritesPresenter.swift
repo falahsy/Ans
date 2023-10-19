@@ -6,3 +6,21 @@
 //
 
 import Foundation
+
+protocol IAnimalFavoritesPresenter {
+    func presentAnimalFacorites(animals: [AnimalFavorite])
+    func presentError(log: String)
+}
+
+class AnimalFavoritesPresenter: IAnimalFavoritesPresenter {
+    
+    weak var view: IAnimalFavoritesViewController?
+    
+    func presentAnimalFacorites(animals: [AnimalFavorite]) {
+        view?.displayAnimalFavorites(animals: animals)
+    }
+    
+    func presentError(log: String) {
+        view?.displaytError(log: log)
+    }
+}

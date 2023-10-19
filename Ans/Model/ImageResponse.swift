@@ -20,12 +20,9 @@ struct ImageResponse: Codable {
 }
 
 struct Photo: Codable {
+    let id: Int
     let src: Src
     var liked: Bool
-    
-    mutating func setLiked(isLike: Bool) {
-        liked = isLike
-    }
 }
 
 struct Src: Codable {

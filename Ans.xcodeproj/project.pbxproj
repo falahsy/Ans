@@ -47,6 +47,10 @@
 		160683052AE0171C007E0EC5 /* AnimalFavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160683042AE0171C007E0EC5 /* AnimalFavoritesPresenter.swift */; };
 		160683072AE01726007E0EC5 /* AnimalFavoritesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160683062AE01726007E0EC5 /* AnimalFavoritesInteractor.swift */; };
 		160683092AE0172F007E0EC5 /* AnimalFavoritesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160683082AE0172F007E0EC5 /* AnimalFavoritesRouter.swift */; };
+		1606830E2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1606830C2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodeld */; };
+		160683112AE024CF007E0EC5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160683102AE024CF007E0EC5 /* CoreDataStack.swift */; };
+		1606831E2AE0C89D007E0EC5 /* AnimalEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1606831C2AE0C89D007E0EC5 /* AnimalEntity+CoreDataClass.swift */; };
+		1606831F2AE0C89D007E0EC5 /* AnimalEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1606831D2AE0C89D007E0EC5 /* AnimalEntity+CoreDataProperties.swift */; };
 		4C9BDA8B7BF760137A228580 /* Pods_AnsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C8E3A8374591DEA18A23E0D /* Pods_AnsTests.framework */; };
 		CE9A3A86E1731E50DC8076D9 /* Pods_Ans.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58AD8AC1DF8AF3D2812634E0 /* Pods_Ans.framework */; };
 		D705C36D7F9A48F0FC51BD4F /* Pods_Ans_AnsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815FEF6D7EA652C33FCF534D /* Pods_Ans_AnsUITests.framework */; };
@@ -115,6 +119,10 @@
 		160683042AE0171C007E0EC5 /* AnimalFavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFavoritesPresenter.swift; sourceTree = "<group>"; };
 		160683062AE01726007E0EC5 /* AnimalFavoritesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFavoritesInteractor.swift; sourceTree = "<group>"; };
 		160683082AE0172F007E0EC5 /* AnimalFavoritesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFavoritesRouter.swift; sourceTree = "<group>"; };
+		1606830D2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoritesAnimal.xcdatamodel; sourceTree = "<group>"; };
+		160683102AE024CF007E0EC5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		1606831C2AE0C89D007E0EC5 /* AnimalEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1606831D2AE0C89D007E0EC5 /* AnimalEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimalEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		22FC8DCA2C71DCADCF464C42 /* Pods-AnsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnsTests.release.xcconfig"; path = "Target Support Files/Pods-AnsTests/Pods-AnsTests.release.xcconfig"; sourceTree = "<group>"; };
 		58AD8AC1DF8AF3D2812634E0 /* Pods_Ans.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ans.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FCF35638992608F7E79C7A /* Pods-Ans-AnsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ans-AnsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Ans-AnsUITests/Pods-Ans-AnsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -214,7 +222,8 @@
 		160682AB2ADF9472007E0EC5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				160682F32AE00F5A007E0EC5 /* json */,
+				1606830B2AE02368007E0EC5 /* CoreData */,
+				160682F32AE00F5A007E0EC5 /* Json */,
 				160682842ADF93FD007E0EC5 /* Assets.xcassets */,
 				160682862ADF93FD007E0EC5 /* LaunchScreen.storyboard */,
 				160682892ADF93FD007E0EC5 /* Info.plist */,
@@ -409,13 +418,13 @@
 			path = AnimalImage;
 			sourceTree = "<group>";
 		};
-		160682F32AE00F5A007E0EC5 /* json */ = {
+		160682F32AE00F5A007E0EC5 /* Json */ = {
 			isa = PBXGroup;
 			children = (
 				160682F52AE00F63007E0EC5 /* AnimalListDummy.json */,
 				160682F42AE00F63007E0EC5 /* ElephantImageDummy.json */,
 			);
-			path = json;
+			path = Json;
 			sourceTree = "<group>";
 		};
 		160682F82AE01030007E0EC5 /* Worker */ = {
@@ -475,6 +484,17 @@
 			children = (
 			);
 			path = AnimalFavorites;
+			sourceTree = "<group>";
+		};
+		1606830B2AE02368007E0EC5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1606830C2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodeld */,
+				160683102AE024CF007E0EC5 /* CoreDataStack.swift */,
+				1606831C2AE0C89D007E0EC5 /* AnimalEntity+CoreDataClass.swift */,
+				1606831D2AE0C89D007E0EC5 /* AnimalEntity+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		8AC975D6F7EF77BBA7F6D802 /* Pods */ = {
@@ -745,6 +765,8 @@
 				160682D72ADFB284007E0EC5 /* AnimalImagesInteractor.swift in Sources */,
 				160682D52ADFB273007E0EC5 /* AnimalListRouter.swift in Sources */,
 				160682CF2ADFAFDC007E0EC5 /* ImageResponse.swift in Sources */,
+				160683112AE024CF007E0EC5 /* CoreDataStack.swift in Sources */,
+				1606831F2AE0C89D007E0EC5 /* AnimalEntity+CoreDataProperties.swift in Sources */,
 				160682CD2ADFAD9E007E0EC5 /* AnimalResponse.swift in Sources */,
 				160682E42ADFC51A007E0EC5 /* AnimalImageTableViewCell.swift in Sources */,
 				160683052AE0171C007E0EC5 /* AnimalFavoritesPresenter.swift in Sources */,
@@ -753,6 +775,7 @@
 				160682BE2ADF980C007E0EC5 /* AnimalApiRouter.swift in Sources */,
 				160682802ADF93FA007E0EC5 /* AnimalListViewController.swift in Sources */,
 				160682DE2ADFBF8B007E0EC5 /* AnimalListTableViewCell.swift in Sources */,
+				1606830E2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodeld in Sources */,
 				160682D12ADFB260007E0EC5 /* AnimalListInteractor.swift in Sources */,
 				160682DB2ADFB295007E0EC5 /* AnimalImagesRouter.swift in Sources */,
 				1606827C2ADF93FA007E0EC5 /* AppDelegate.swift in Sources */,
@@ -760,6 +783,7 @@
 				160683032AE016FF007E0EC5 /* AnimalFavoritesViewController.swift in Sources */,
 				160682B82ADF956C007E0EC5 /* AnimalImageViewController.swift in Sources */,
 				160682C02ADF9872007E0EC5 /* ImageApiRouter.swift in Sources */,
+				1606831E2AE0C89D007E0EC5 /* AnimalEntity+CoreDataClass.swift in Sources */,
 				160682C62ADFAD04007E0EC5 /* AnimalService.swift in Sources */,
 				160683072AE01726007E0EC5 /* AnimalFavoritesInteractor.swift in Sources */,
 				160682C82ADFAD0C007E0EC5 /* ImageService.swift in Sources */,
@@ -1118,6 +1142,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1606830C2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1606830D2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodel */,
+			);
+			currentVersion = 1606830D2AE02394007E0EC5 /* FavoritesAnimal.xcdatamodel */;
+			path = FavoritesAnimal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 160682702ADF93FA007E0EC5 /* Project object */;
 }

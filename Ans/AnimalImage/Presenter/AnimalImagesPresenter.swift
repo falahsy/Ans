@@ -9,6 +9,7 @@ import Foundation
 
 protocol IAnimalImagesPresenter {
     func presentImages(images: [Photo])
+    func presentSaveFavoriteSuccess(log: String)
     func presentError(log: String)
 }
 
@@ -22,5 +23,9 @@ class AnimalImagesPresenter: IAnimalImagesPresenter {
     
     func presentError(log: String) {
         view?.displayError(log: log)
+    }
+    
+    func presentSaveFavoriteSuccess(log: String) {
+        view?.displaySaveFavoriteSuccess(log: log)
     }
 }

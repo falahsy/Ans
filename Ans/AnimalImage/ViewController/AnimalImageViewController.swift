@@ -9,6 +9,7 @@ import UIKit
 
 protocol IAnimalImagesViewController: AnyObject {
     func displayImages(images: [Photo])
+    func displaySaveFavoriteSuccess(log: String)
     func displayError(log: String)
 }
 
@@ -31,13 +32,13 @@ class AnimalImagesViewController: UIViewController {
     }()
     
     private let interactor: IAnimalImagesInteractor
-    private var animalName: String
+    private var animal: Animal
     
     private let idImageCell: String = "imageCell"
     private var photos: [Photo] = []
     
-    init(animalName: String) {
-        self.animalName = animalName
+    init(animal: Animal) {
+        self.animal = animal
         let presenter = AnimalImagesPresenter()
         let worker = ImageWorker(imageService: ImageService.shared)
         interactor = AnimalImagesInteractor(presenter: presenter, worker: worker)
@@ -51,7 +52,7 @@ class AnimalImagesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        title = animalName.capitalized
+        title = animal.name.capitalized
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -94,7 +95,7 @@ class AnimalImagesViewController: UIViewController {
     
     private func setupContent() {
         activityIndicatorRunning()
-        interactor.getImages(query: animalName)
+        interactor.getImages(query: animal.name)
     }
 
     private func reloadAnimalImage() {
@@ -135,6 +136,14 @@ extension AnimalImagesViewController: IAnimalImagesViewController {
         reloadAnimalImage()
     }
     
+    func displaySaveFavoriteSuccess(log: String) {
+        reloadAnimalImage()
+        let alertController = UIAlertController(title: "Info", message: log, preferredStyle: .alert)
+        let saveAction = UIAlertAction(title: "OK", style: .default)
+        alertController.addAction(saveAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
     func displayError(log: String) {
         activityIndicatorStop()
         let alertController = UIAlertController(title: "Error", message: "log", preferredStyle: .alert)
@@ -154,7 +163,7 @@ extension AnimalImagesViewController: UITableViewDataSource {
               let photo = photos[safe: indexPath.row] else {
             return UITableViewCell()
         }
-        cell.setupContent(name: animalName, image: photo, isLike: photo.liked, at: indexPath)
+        cell.setupContent(name: animal.name, urlImage: photo.src.landscape, isLike: photo.liked, at: indexPath, isFavoritePage: false)
         cell.delegate = self
         return cell
     }
@@ -173,9 +182,12 @@ extension AnimalImagesViewController: UITableViewDelegate {
 
 extension AnimalImagesViewController: AnimalImageTableViewCellDelegate {
     func didLikeTapped(isLike: Bool, at index: IndexPath) {
-        guard var tappedPhoto = photos[safe: index.row] else { return }
-        tappedPhoto.liked = isLike
-        photos[index.row] = tappedPhoto
-        reloadAnimeImageRow(at: index)
+        guard let tappedPhoto = photos[safe: index.row] else { return }
+        if isLike {
+            let animalFavorite = AnimalFavorite(id: tappedPhoto.id, name: animal.name, family: animal.taxonomy.family ?? "", liked: isLike, src: tappedPhoto.src.landscape)
+            interactor.saveImages(animalFavorite: animalFavorite)
+        } else {
+            interactor.deleteImages(id: tappedPhoto.id)
+        }
     }
 }

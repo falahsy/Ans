@@ -148,6 +148,6 @@ extension AnimalListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let animal = animals[safe: indexPath.row] else { return }
-        router.navigateToPokemonDetail(from: self, animalName: animal.name)
+        router.navigateToPokemonDetail(from: self, animal: animal)
     }
 }

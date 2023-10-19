@@ -8,13 +8,13 @@
 import UIKit
 
 protocol IAnimalListRouter {
-    func navigateToPokemonDetail(from originView: AnimalListViewController, animalName: String)
+    func navigateToPokemonDetail(from originView: AnimalListViewController, animal: Animal)
 }
 
 class AnimalListRouter: IAnimalListRouter {
 
-    func navigateToPokemonDetail(from originView: AnimalListViewController, animalName: String) {
-        let destinationView = AnimalImagesViewController(animalName: animalName)
+    func navigateToPokemonDetail(from originView: AnimalListViewController, animal: Animal) {
+        let destinationView = AnimalImagesViewController(animal: animal)
         destinationView.hidesBottomBarWhenPushed = true
         originView.navigationController?.pushViewController(destinationView, animated: true)
     }
